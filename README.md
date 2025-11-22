@@ -37,12 +37,14 @@ Falls die .bat Dateien nicht funktionieren oder Sie unter Linux/macOS arbeiten, 
    source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
    ```
 
-3. **Environment-Variablen setzen**: Legen Sie eine `.env` Datei im Projektwurzelverzeichnis an (wird von `src/ai/client.py` gelesen). Beispiel:
+3. **Environment-Variablen setzen**: Legen Sie eine `.env` Datei im Projektwurzelverzeichnis an (wird automatisch eingelesen). Beispiel:
 
    ```env
    GOOGLE_API_KEY=AIzaSyC...
    LOG_LEVEL=INFO
    ```
+
+   Die Werte werden beim Start des Tools und in den Eingabefeldern der Oberfläche automatisch geladen. Die App prüft dabei, ob die Keys mit `AIza` beginnen und nicht zu kurz sind.
 
 4. **Dependencies installieren**:
 
@@ -65,10 +67,11 @@ Falls die .bat Dateien nicht funktionieren oder Sie unter Linux/macOS arbeiten, 
 
 Führen Sie vor einem Commit oder Release die folgenden Prüfungen aus:
 
-1. **Formatierung**: `black src` (optional für reine GUI-Änderungen, empfohlen für CI-Konformität)
-2. **Linting**: `python -m compileall src`
-3. **Tests**: `pytest` (falls Tests vorhanden sind)
-4. **Security/Dependencies**: `pip-audit` (prüft `requirements.txt`)
+1. **Alle Checks auf einmal**: `python scripts/run_checks.py` (führt Black, Compile-All, Pytest und `pip-audit` aus)
+2. **Formatierung**: `black src tests scripts`
+3. **Linting**: `python -m compileall src`
+4. **Tests**: `pytest`
+5. **Security/Dependencies**: `pip-audit` (prüft `requirements.txt`)
 
 Auf Windows können die Befehle innerhalb von PowerShell analog verwendet werden.
 

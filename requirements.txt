@@ -3,3 +3,6 @@ google-generativeai
 pillow
 google-genai
 requests
+black
+pytest
+pip-audit

@@ -5,6 +5,10 @@ Alle relevanten Änderungen an diesem Projekt werden in diesem Dokument festgeha
 ## [Unreleased]
 - Platz für neue Features, Fixes und Dokumentationsänderungen.
 
+### Added
+- API-Keys werden jetzt automatisch aus `.env`, `config.json` und Environment-Variablen geladen und validiert, bevor sie gespeichert werden.
+- Neues Skript `scripts/run_checks.py` bündelt Formatierung, Linting, Tests und Security-Scan.
+
 ## So nutzen Sie dieses Changelog
 
 - **Neue Einträge**: Pro Release einen Abschnitt anlegen (z. B. `## [1.0.0] - 2025-01-01`).
