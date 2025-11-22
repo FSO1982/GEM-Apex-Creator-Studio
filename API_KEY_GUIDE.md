@@ -49,6 +49,12 @@ Melden Sie sich mit Ihrem Google-Konto an.
 - Google API Keys haben ~39 Zeichen
 - Überprüfen Sie, ob Sie den ganzen Key kopiert haben
 
+## Sicherheitshinweise
+
+- Speichern Sie den Key in einer `.env` Datei oder einem Secrets-Manager, nicht im Code oder in Git.
+- Teilen Sie den Key niemals in Screenshots, Logs oder Support-Tickets.
+- Wenn Sie vermuten, dass der Key geleakt wurde: Key in Google AI Studio widerrufen und einen neuen erstellen.
+
 ## Free Tier Limits:
 
 - ✅ 15 Anfragen pro Minute
