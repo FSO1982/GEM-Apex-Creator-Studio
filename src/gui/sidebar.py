@@ -7,6 +7,7 @@ from PIL import Image
 from tkinter import filedialog, messagebox
 
 from gui.state import AppState
+from utils.config_loader import load_api_keys, sanitize_key, validate_google_api_key
 
 
 class SidebarController:
@@ -40,22 +41,42 @@ class SidebarController:
 
     def save_and_connect(
         self, vision_key: str, writer_key: str, image_key: str
-    ) -> None:
-        if not vision_key or not writer_key or not image_key:
+    ) -> bool:
+        cleaned_vision = sanitize_key(vision_key)
+        cleaned_writer = sanitize_key(writer_key)
+        cleaned_image = sanitize_key(image_key)
+
+        if not cleaned_vision or not cleaned_writer or not cleaned_image:
             self.messagebox.showwarning("Konfiguration", "Bitte ALLE 3 Keys eingeben.")
+            return False
+
+        for label, key in (
+            ("Vision", cleaned_vision),
+            ("Writer", cleaned_writer),
+            ("Imagen", cleaned_image),
+        ):
+            is_valid, reason = validate_google_api_key(key)
+            if not is_valid:
+                self.messagebox.showerror(
+                    "Ungültiger API Key", f"{label} Key ungültig: {reason}"
+                )
+                return False
 
         config = {
-            "vision_key": vision_key,
-            "writer_key": writer_key,
-            "image_key": image_key,
+            "vision_key": cleaned_vision,
+            "writer_key": cleaned_writer,
+            "image_key": cleaned_image,
         }
+
         try:
             with open(self.state.config_file, "w", encoding="utf-8") as f:
                 json.dump(config, f)
             self.messagebox.showinfo("Erfolg", "Keys gespeichert!")
-            self.state.ai_client.configure(writer_key)
+            self.state.ai_client.configure(cleaned_writer)
+            return True
         except Exception as exc:  # pragma: no cover - messagebox path
             self.messagebox.showerror("Fehler", f"Konnte Config nicht speichern: {exc}")
+            return False
 
     def load_config(
         self,
@@ -63,19 +84,18 @@ class SidebarController:
         writer_entry: ctk.CTkEntry,
         image_entry: ctk.CTkEntry,
     ) -> None:
-        if os.path.exists(self.state.config_file):
-            try:
-                with open(self.state.config_file, "r", encoding="utf-8") as f:
-                    config = json.load(f)
-                    vision_entry.insert(
-                        0, config.get("vision_key", "") or config.get("gemini_key", "")
-                    )
-                    writer_entry.insert(
-                        0, config.get("writer_key", "") or config.get("gemini_key", "")
-                    )
-                    image_entry.insert(0, config.get("image_key", ""))
-            except Exception:
-                return
+        keys = load_api_keys(self.state.config_file)
+
+        try:
+            vision_entry.delete(0, "end")
+            writer_entry.delete(0, "end")
+            image_entry.delete(0, "end")
+
+            vision_entry.insert(0, keys.get("vision_key", ""))
+            writer_entry.insert(0, keys.get("writer_key", ""))
+            image_entry.insert(0, keys.get("image_key", ""))
+        except Exception:
+            return
 
     def refresh_dossiers(self) -> list[str]:
         files = [
