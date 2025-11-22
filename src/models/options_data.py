@@ -1,4 +1,3 @@
-
 # src/models/options_data.py
 
 CHARACTER_OPTIONS = {
@@ -6,288 +5,544 @@ CHARACTER_OPTIONS = {
         "1. Somatisches Grundprofil": {
             "Herkunft": [
                 "Keine Auswahl",
-                "Nordisch/Kühl (Blass, Hell)", "Mediterran/Feurig (Olive, Dunkel)", "Osteuropäisch/Streng (Markant)", 
-                "Asiatisch/Zart (Fein)", "Latina/Kurvig (Sinnlich)", "Afrikanisch/Stolz (Ebenholz)", "Gemischt/Exotisch (Unbestimmbar)",
-                "Keltisch (Rot, Sommersprossen)", "Slawisch (Hohe Wangenknochen)", "Arabisch (Tiefgründig)"
+                "Nordisch/Kühl (Blass, Hell)",
+                "Mediterran/Feurig (Olive, Dunkel)",
+                "Osteuropäisch/Streng (Markant)",
+                "Asiatisch/Zart (Fein)",
+                "Latina/Kurvig (Sinnlich)",
+                "Afrikanisch/Stolz (Ebenholz)",
+                "Gemischt/Exotisch (Unbestimmbar)",
+                "Keltisch (Rot, Sommersprossen)",
+                "Slawisch (Hohe Wangenknochen)",
+                "Arabisch (Tiefgründig)",
             ],
             "Größe": [
                 "Keine Auswahl",
-                "Sehr klein (<1.55m)", "Klein (1.55-1.65m)", "Durchschnitt (1.65-1.75m)", "Groß (1.75-1.85m)", "Sehr groß (>1.85m)",
-                "Modell-Größe (1.80m+)", "Zierlich-Kompakt (1.50m)"
+                "Sehr klein (<1.55m)",
+                "Klein (1.55-1.65m)",
+                "Durchschnitt (1.65-1.75m)",
+                "Groß (1.75-1.85m)",
+                "Sehr groß (>1.85m)",
+                "Modell-Größe (1.80m+)",
+                "Zierlich-Kompakt (1.50m)",
             ],
             "Typ": [
                 "Keine Auswahl",
-                "Die hedonistische Jagdpantherin", "Das zerbrechliche Porzellanpüppchen", 
-                "Die dominante Amazone", "Die intellektuelle Verführerin", 
-                "Das naive Unschuldslamm", "Die mütterliche Beschützerin", "Die kühle Karrierefrau",
-                "Die gefallene Prinzessin", "Die wilde Naturgewalt", "Die stille Beobachterin"
+                "Die hedonistische Jagdpantherin",
+                "Das zerbrechliche Porzellanpüppchen",
+                "Die dominante Amazone",
+                "Die intellektuelle Verführerin",
+                "Das naive Unschuldslamm",
+                "Die mütterliche Beschützerin",
+                "Die kühle Karrierefrau",
+                "Die gefallene Prinzessin",
+                "Die wilde Naturgewalt",
+                "Die stille Beobachterin",
             ],
             "Grundkonstitution": [
                 "Keine Auswahl",
-                "Zierlich/Fragil", "Dünn/Drahtig", "Sportlich/Definiert", 
-                "Kurvig/Weich", "Üppig/Voll", "Muskulös/Kraftvoll", "Adipös/Massiv",
-                "Hungerhaken (Ungesund)", "Rubens-Figur (Klassisch)", "Athletisch-Massiv (Crossfit)"
+                "Zierlich/Fragil",
+                "Dünn/Drahtig",
+                "Sportlich/Definiert",
+                "Kurvig/Weich",
+                "Üppig/Voll",
+                "Muskulös/Kraftvoll",
+                "Adipös/Massiv",
+                "Hungerhaken (Ungesund)",
+                "Rubens-Figur (Klassisch)",
+                "Athletisch-Massiv (Crossfit)",
             ],
             "Haut-Mikrobiom": [
                 "Keine Auswahl",
-                "Porzellan/Rein", "Sommersprossig/Sonnig", "Gebräunt/Golden", 
-                "Ölig/Glänzend", "Trocken/Rau", "Vernarbt/Gelebt", "Tätowiert/Kunstvoll",
-                "Alabaster (Durchscheinend)", "Oliv (Matt)", "Gerötet (Empfindlich)"
+                "Porzellan/Rein",
+                "Sommersprossig/Sonnig",
+                "Gebräunt/Golden",
+                "Ölig/Glänzend",
+                "Trocken/Rau",
+                "Vernarbt/Gelebt",
+                "Tätowiert/Kunstvoll",
+                "Alabaster (Durchscheinend)",
+                "Oliv (Matt)",
+                "Gerötet (Empfindlich)",
             ],
             "Neurologisches Reaktionsspektrum": [
                 "Keine Auswahl",
-                "Blitzschnell/Instinktiv", "Bedacht/Analytisch", "Verzögert/Träge", "Hysterisch/Überreizt",
-                "Katatonisch (Abwesend)", "Hyperaktiv (Fahrig)"
-            ]
+                "Blitzschnell/Instinktiv",
+                "Bedacht/Analytisch",
+                "Verzögert/Träge",
+                "Hysterisch/Überreizt",
+                "Katatonisch (Abwesend)",
+                "Hyperaktiv (Fahrig)",
+            ],
         },
         "2. Der Intimbereich": {
             "Busch / Die Rasur": [
                 "Keine Auswahl",
-                "Komplett rasiert (Hollywood)", "Landing Strip", "Dreieck", 
-                "Herzform", "Buschig/Natur", "Getrimmt/Gepflegt", "Wildwuchs",
-                "Blitz (Design)", "Initialen (Extrem)", "Brasilianisch (Dünner Streifen)"
+                "Komplett rasiert (Hollywood)",
+                "Landing Strip",
+                "Dreieck",
+                "Herzform",
+                "Buschig/Natur",
+                "Getrimmt/Gepflegt",
+                "Wildwuchs",
+                "Blitz (Design)",
+                "Initialen (Extrem)",
+                "Brasilianisch (Dünner Streifen)",
             ],
             "Haarfarbe (Intim)": [
                 "Keine Auswahl",
-                "Wie Haupthaar", "Dunkler", "Heller", "Gefärbt (Neon)", "Graumeliert",
-                "Rot (Feurig)", "Schwarz (Dicht)", "Blond (Flaum)"
+                "Wie Haupthaar",
+                "Dunkler",
+                "Heller",
+                "Gefärbt (Neon)",
+                "Graumeliert",
+                "Rot (Feurig)",
+                "Schwarz (Dicht)",
+                "Blond (Flaum)",
             ],
             "Haartextur": [
                 "Keine Auswahl",
-                "Weich/Flaum", "Drahtig/Hart", "Lockig", "Glatt", "Stoppelig"
+                "Weich/Flaum",
+                "Drahtig/Hart",
+                "Lockig",
+                "Glatt",
+                "Stoppelig",
             ],
             "Vulva-Morphologie": [
                 "Keine Auswahl",
-                "Innocent (Geschlossen)", "Puffy (Geschwollen)", "Butterfly (Innere Lippen sichtbar)", 
-                "Dangling (Innere Lippen prominent)", "Gaping (Leicht geöffnet)",
-                "Symmetrisch (Perfekt)", "Asymmetrisch (Natürlich)", "Barbie (Minimalistisch)"
+                "Innocent (Geschlossen)",
+                "Puffy (Geschwollen)",
+                "Butterfly (Innere Lippen sichtbar)",
+                "Dangling (Innere Lippen prominent)",
+                "Gaping (Leicht geöffnet)",
+                "Symmetrisch (Perfekt)",
+                "Asymmetrisch (Natürlich)",
+                "Barbie (Minimalistisch)",
             ],
             "Intimgeruch": [
                 "Keine Auswahl",
-                "Neutral/Seifig", "Moschus/Wild", "Süßlich/Honig", "Säuerlich/Zitrus", "Metallisch/Eisen", "Ozeanisch/Salzig",
-                "Pheromon-Bombe (Betörend)", "Erdig (Natur)"
-            ]
+                "Neutral/Seifig",
+                "Moschus/Wild",
+                "Süßlich/Honig",
+                "Säuerlich/Zitrus",
+                "Metallisch/Eisen",
+                "Ozeanisch/Salzig",
+                "Pheromon-Bombe (Betörend)",
+                "Erdig (Natur)",
+            ],
         },
         "3. Brustmorphologie": {
             "Größe": [
                 "Keine Auswahl",
-                "A-Körbchen (Klein)", "B-Körbchen (Handvoll)", "C-Körbchen (Mittel)", "D-Körbchen (Voll)", "E+ Körbchen (Üppig)", "Gigantisch",
-                "Flach (Androgyn)", "Überdimensional (Anime)"
+                "A-Körbchen (Klein)",
+                "B-Körbchen (Handvoll)",
+                "C-Körbchen (Mittel)",
+                "D-Körbchen (Voll)",
+                "E+ Körbchen (Üppig)",
+                "Gigantisch",
+                "Flach (Androgyn)",
+                "Überdimensional (Anime)",
             ],
             "Form": [
                 "Keine Auswahl",
-                "Apfel (Rund)", "Birne (Unten voll)", "Tropfen (Natürlich)", "Melone (Gemacht)", "Schlauch (Hängend)",
-                "Glocken (Breit)", "Spitz (Konisch)"
+                "Apfel (Rund)",
+                "Birne (Unten voll)",
+                "Tropfen (Natürlich)",
+                "Melone (Gemacht)",
+                "Schlauch (Hängend)",
+                "Glocken (Breit)",
+                "Spitz (Konisch)",
             ],
             "Festigkeit": [
                 "Keine Auswahl",
-                "Steinhart (Silikon)", "Fest/Jugendlich", "Weich/Natürlich", "Hängend/Reif", "Schlaff",
-                "Wackelig (Pudding)", "Straff (Sport)"
+                "Steinhart (Silikon)",
+                "Fest/Jugendlich",
+                "Weich/Natürlich",
+                "Hängend/Reif",
+                "Schlaff",
+                "Wackelig (Pudding)",
+                "Straff (Sport)",
             ],
             "Nippel-Profil": [
                 "Keine Auswahl",
-                "Klein/Flach", "Mittel/Rosig", "Groß/Dunkel", "Invertiert", "Erigiert/Hart", "Puffy/Geschwollen",
-                "Durchstochen (Gepierct)", "Lang (Finger)"
+                "Klein/Flach",
+                "Mittel/Rosig",
+                "Groß/Dunkel",
+                "Invertiert",
+                "Erigiert/Hart",
+                "Puffy/Geschwollen",
+                "Durchstochen (Gepierct)",
+                "Lang (Finger)",
             ],
             "Areolae": [
                 "Keine Auswahl",
-                "Klein/Münze", "Mittel", "Groß/Untertasse", "Sehr Groß", "Dunkelbraun", "Hellrosa",
-                "Herzförmig (Tätowiert)", "Unscharf (Verlaufend)"
-            ]
+                "Klein/Münze",
+                "Mittel",
+                "Groß/Untertasse",
+                "Sehr Groß",
+                "Dunkelbraun",
+                "Hellrosa",
+                "Herzförmig (Tätowiert)",
+                "Unscharf (Verlaufend)",
+            ],
         },
         "4. Gesicht & Haar": {
             "Gesichtsform": [
                 "Keine Auswahl",
-                "Oval", "Rund", "Eckig/Markant", "Herzförmig", "Langgezogen",
-                "Diamant (Scharf)", "Kindchenschema (Weich)"
+                "Oval",
+                "Rund",
+                "Eckig/Markant",
+                "Herzförmig",
+                "Langgezogen",
+                "Diamant (Scharf)",
+                "Kindchenschema (Weich)",
             ],
             "Augenfarbe": [
                 "Keine Auswahl",
-                "Blau", "Grün", "Braun", "Grau", "Bernstein", "Heterochromie",
-                "Violett (Kontaktlinsen)", "Schwarz (Dämonisch)"
+                "Blau",
+                "Grün",
+                "Braun",
+                "Grau",
+                "Bernstein",
+                "Heterochromie",
+                "Violett (Kontaktlinsen)",
+                "Schwarz (Dämonisch)",
             ],
             "Mund": [
                 "Keine Auswahl",
-                "Schmal/Streng", "Voll/Sinnlich", "Breit/Lachend", "Klein/Puppenhaft", "Amorbogen",
-                "Aufgespritzt (Künstlich)", "Dünn/Verbissen"
+                "Schmal/Streng",
+                "Voll/Sinnlich",
+                "Breit/Lachend",
+                "Klein/Puppenhaft",
+                "Amorbogen",
+                "Aufgespritzt (Künstlich)",
+                "Dünn/Verbissen",
             ],
             "Haarfarbe": [
                 "Keine Auswahl",
-                "Blond", "Brunette", "Schwarz", "Rot", "Grau/Weiß", "Bunt",
-                "Platinblond (Gebleicht)", "Rabenblau (Schwarz)", "Kupfer (Natürlich)"
+                "Blond",
+                "Brunette",
+                "Schwarz",
+                "Rot",
+                "Grau/Weiß",
+                "Bunt",
+                "Platinblond (Gebleicht)",
+                "Rabenblau (Schwarz)",
+                "Kupfer (Natürlich)",
             ],
             "Haarlänge": [
                 "Keine Auswahl",
-                "Glatze", "Pixie/Kurz", "Kinnlang/Bob", "Schulterlang", "Rückenlang", "Bis zum Po",
-                "Bodenlang (Rapunzel)"
+                "Glatze",
+                "Pixie/Kurz",
+                "Kinnlang/Bob",
+                "Schulterlang",
+                "Rückenlang",
+                "Bis zum Po",
+                "Bodenlang (Rapunzel)",
             ],
             "Haarstruktur": [
                 "Keine Auswahl",
-                "Glatt", "Wellig", "Lockig", "Kraus/Afro", "Dreadlocks", "Geflochten"
-            ]
+                "Glatt",
+                "Wellig",
+                "Lockig",
+                "Kraus/Afro",
+                "Dreadlocks",
+                "Geflochten",
+            ],
         },
         "5. Körperbau & Haltung": {
             "Statur": [
                 "Keine Auswahl",
-                "Sanduhr (X)", "Birne (A)", "Apfel (O)", "Rechteck (H)", "Umgekehrtes Dreieck (V)",
-                "Löffel (Hüftbetont)", "Diamant (Bauchbetont)"
+                "Sanduhr (X)",
+                "Birne (A)",
+                "Apfel (O)",
+                "Rechteck (H)",
+                "Umgekehrtes Dreieck (V)",
+                "Löffel (Hüftbetont)",
+                "Diamant (Bauchbetont)",
             ],
             "Po-Form": [
                 "Keine Auswahl",
-                "Apfel (Rund)", "Herz (Unten voll)", "Pfirsich (Klein/Knackig)", "Flach", "Breit/Shelf",
-                "Bubblebutt (Extrem)", "Quadratisch (Maskulin)"
+                "Apfel (Rund)",
+                "Herz (Unten voll)",
+                "Pfirsich (Klein/Knackig)",
+                "Flach",
+                "Breit/Shelf",
+                "Bubblebutt (Extrem)",
+                "Quadratisch (Maskulin)",
             ],
             "Muskeldefinition": [
                 "Keine Auswahl",
-                "Keine/Weich", "Leicht definiert", "Fit/Toned", "Muskulös", "Bodybuilder",
-                "Sehnig (Kletterer)", "Massiv (Powerlifter)"
-            ]
+                "Keine/Weich",
+                "Leicht definiert",
+                "Fit/Toned",
+                "Muskulös",
+                "Bodybuilder",
+                "Sehnig (Kletterer)",
+                "Massiv (Powerlifter)",
+            ],
         },
         "6. Signature-Elemente": {
             "Kleidungsstil": [
                 "Keine Auswahl",
-                "Casual/Jeans", "Business/Streng", "Goth/Dunkel", "Boho/Hippie", "Sportlich", "Elegant/Teuer", "Slutty/Freizügig",
-                "Latex/Fetisch", "Vintage/Retro", "Streetwear/Baggy"
+                "Casual/Jeans",
+                "Business/Streng",
+                "Goth/Dunkel",
+                "Boho/Hippie",
+                "Sportlich",
+                "Elegant/Teuer",
+                "Slutty/Freizügig",
+                "Latex/Fetisch",
+                "Vintage/Retro",
+                "Streetwear/Baggy",
             ],
             "Markenzeichen": [
                 "Keine Auswahl",
-                "Brille", "Muttermal", "Narbe", "Tattoo (Sichtbar)", "Piercing (Gesicht)", "Schmuck (Auffällig)",
-                "Zahnlücke", "Sommersprossen-Explosion", "Brandmal"
-            ]
-        }
+                "Brille",
+                "Muttermal",
+                "Narbe",
+                "Tattoo (Sichtbar)",
+                "Piercing (Gesicht)",
+                "Schmuck (Auffällig)",
+                "Zahnlücke",
+                "Sommersprossen-Explosion",
+                "Brandmal",
+            ],
+        },
     },
     "II. Psycho-Neurologische Tiefenanalyse": {
         "1. Original-Komplex-Syndrom": {
             "Kernpathologie": [
                 "Keine Auswahl",
-                "Vater-Komplex", "Minderwertigkeitskomplex", "Narzissmus", 
-                "Borderline-Tendenzen", "Helfersyndrom", "Kontrollzwang", "Angststörung",
-                "Histrionisch (Drama)", "Schizoid (Rückzug)", "Soziopathisch (Kälte)"
+                "Vater-Komplex",
+                "Minderwertigkeitskomplex",
+                "Narzissmus",
+                "Borderline-Tendenzen",
+                "Helfersyndrom",
+                "Kontrollzwang",
+                "Angststörung",
+                "Histrionisch (Drama)",
+                "Schizoid (Rückzug)",
+                "Soziopathisch (Kälte)",
             ],
             "Antrieb": [
                 "Keine Auswahl",
-                "Anerkennung", "Sicherheit", "Macht", "Lust/Hedonismus", "Rache", "Liebe/Geborgenheit",
-                "Chaos (Zerstörung)", "Wahrheit (Obsession)"
+                "Anerkennung",
+                "Sicherheit",
+                "Macht",
+                "Lust/Hedonismus",
+                "Rache",
+                "Liebe/Geborgenheit",
+                "Chaos (Zerstörung)",
+                "Wahrheit (Obsession)",
             ],
             "Kognitive Verzerrungen": [
                 "Keine Auswahl",
-                "Schwarz-Weiß-Denken", "Katastrophisieren", "Personalisierung", "Emotionale Beweisführung",
-                "Gedankenlesen", "Tunnelblick"
-            ]
+                "Schwarz-Weiß-Denken",
+                "Katastrophisieren",
+                "Personalisierung",
+                "Emotionale Beweisführung",
+                "Gedankenlesen",
+                "Tunnelblick",
+            ],
         },
         "2. Emotionale Schichtungen": {
             "Dominante Emotion": [
                 "Keine Auswahl",
-                "Wut", "Trauer", "Freude/Euphorie", "Angst", "Ekel", "Überraschung", "Verachtung",
-                "Gleichgültigkeit", "Lust"
+                "Wut",
+                "Trauer",
+                "Freude/Euphorie",
+                "Angst",
+                "Ekel",
+                "Überraschung",
+                "Verachtung",
+                "Gleichgültigkeit",
+                "Lust",
             ],
             "Verborgene Emotion": [
                 "Keine Auswahl",
-                "Scham", "Schuld", "Einsamkeit", "Sehnsucht", "Neid",
-                "Hoffnung", "Verzweiflung"
-            ]
+                "Scham",
+                "Schuld",
+                "Einsamkeit",
+                "Sehnsucht",
+                "Neid",
+                "Hoffnung",
+                "Verzweiflung",
+            ],
         },
         "3. Neurotransmitter-Profil": {
             "Dopamin-Trigger": [
                 "Keine Auswahl",
-                "Sex", "Essen", "Shopping", "Glücksspiel", "Erfolg", "Schmerz",
-                "Social Media Likes", "Risiko/Adrenalin"
+                "Sex",
+                "Essen",
+                "Shopping",
+                "Glücksspiel",
+                "Erfolg",
+                "Schmerz",
+                "Social Media Likes",
+                "Risiko/Adrenalin",
             ],
             "Stress-Reaktion": [
                 "Keine Auswahl",
-                "Kampf (Aggression)", "Flucht (Rückzug)", "Erstarren (Passivität)", "Unterwerfung (Fawning)",
-                "Dissoziation (Wegtreten)"
-            ]
-        }
+                "Kampf (Aggression)",
+                "Flucht (Rückzug)",
+                "Erstarren (Passivität)",
+                "Unterwerfung (Fawning)",
+                "Dissoziation (Wegtreten)",
+            ],
+        },
     },
     "III. Sensorische Mikroprofile": {
         "1. Olfaktorische Signatur": {
             "Parfüm-Präferenz": [
                 "Keine Auswahl",
-                "Blumig/Süß", "Frisch/Zitrus", "Orientalisch/Schwer", "Holzig/Herb", "Kein Parfüm",
-                "Synthetisch/Chemisch", "Pudrig/Altmodisch"
+                "Blumig/Süß",
+                "Frisch/Zitrus",
+                "Orientalisch/Schwer",
+                "Holzig/Herb",
+                "Kein Parfüm",
+                "Synthetisch/Chemisch",
+                "Pudrig/Altmodisch",
             ],
             "Reaktion auf Schweiß": [
                 "Keine Auswahl",
-                "Ekel", "Neutral", "Erregung/Anziehung",
-                "Panik (Trauma)"
-            ]
+                "Ekel",
+                "Neutral",
+                "Erregung/Anziehung",
+                "Panik (Trauma)",
+            ],
         },
         "2. Taktile Sensitivität": {
             "Bevorzugte Berührung": [
                 "Keine Auswahl",
-                "Sanft/Streicheln", "Fest/Druck", "Kratzen/Schmerz", "Vibration", "Temperatur (Heiß/Kalt)",
-                "Bisse", "Schläge"
+                "Sanft/Streicheln",
+                "Fest/Druck",
+                "Kratzen/Schmerz",
+                "Vibration",
+                "Temperatur (Heiß/Kalt)",
+                "Bisse",
+                "Schläge",
             ],
             "Erogene Zonen (Top)": [
                 "Keine Auswahl",
-                "Nacken", "Ohren", "Brüste/Nippel", "Innenschenkel", "Füße", "Hintern",
-                "Kopfhaut", "Handflächen"
-            ]
+                "Nacken",
+                "Ohren",
+                "Brüste/Nippel",
+                "Innenschenkel",
+                "Füße",
+                "Hintern",
+                "Kopfhaut",
+                "Handflächen",
+            ],
         },
         "3. Auditive Wahrnehmung": {
             "Stimme": [
                 "Keine Auswahl",
-                "Hoch/Piepsig", "Mittel/Klar", "Tief/Rauchig", "Laut/Dominant", "Leise/Schüchtern",
-                "Heiser (Verlebt)", "Monoton (Roboter)"
+                "Hoch/Piepsig",
+                "Mittel/Klar",
+                "Tief/Rauchig",
+                "Laut/Dominant",
+                "Leise/Schüchtern",
+                "Heiser (Verlebt)",
+                "Monoton (Roboter)",
             ],
             "Trigger-Worte": [
                 "Keine Auswahl",
-                "Kosenamen", "Beleidigungen", "Befehle", "Lob", "Flüstern",
-                "Vulgärsprache", "Intellektuelle Begriffe"
-            ]
-        }
+                "Kosenamen",
+                "Beleidigungen",
+                "Befehle",
+                "Lob",
+                "Flüstern",
+                "Vulgärsprache",
+                "Intellektuelle Begriffe",
+            ],
+        },
     },
     "IV. Entwicklungsgeschichte": {
         "Phasen der Entwicklung": {
             "Kindheit": [
                 "Keine Auswahl",
-                "Behütet/Glücklich", "Streng/Autoritär", "Vernachlässigt/Einsam", "Traumatisch/Missbrauch", "Chaotisch/Frei",
-                "Waisenhaus/Heim", "Nomadisch (Reisen)"
+                "Behütet/Glücklich",
+                "Streng/Autoritär",
+                "Vernachlässigt/Einsam",
+                "Traumatisch/Missbrauch",
+                "Chaotisch/Frei",
+                "Waisenhaus/Heim",
+                "Nomadisch (Reisen)",
             ],
             "Jugend": [
                 "Keine Auswahl",
-                "Rebellisch", "Angepasst/Musterschüler", "Außenseiter", "Beliebt/Star", "Unsichtbar",
-                "Kriminell", "Frühreif"
+                "Rebellisch",
+                "Angepasst/Musterschüler",
+                "Außenseiter",
+                "Beliebt/Star",
+                "Unsichtbar",
+                "Kriminell",
+                "Frühreif",
             ],
             "Wendepunkt": [
                 "Keine Auswahl",
-                "Erste Liebe", "Verlust/Tod", "Karriere-Sprung", "Unfall/Krankheit", "Begegnung mit Frank",
-                "Lottogewinn", "Gefängnis"
-            ]
+                "Erste Liebe",
+                "Verlust/Tod",
+                "Karriere-Sprung",
+                "Unfall/Krankheit",
+                "Begegnung mit Frank",
+                "Lottogewinn",
+                "Gefängnis",
+            ],
         }
     },
     "V. Relationale Mikrodynamiken": {
         "Beziehungs-Dynamik": {
             "Rolle in Beziehung": [
                 "Keine Auswahl",
-                "Dominant/Führend", "Submissiv/Folgend", "Partnerschaftlich/Gleich", "Mütterlich/Versorgend", "Kindlich/Bedürftig",
-                "Parasitär (Ausnutzend)", "Symbiotisch (Verschmelzend)"
+                "Dominant/Führend",
+                "Submissiv/Folgend",
+                "Partnerschaftlich/Gleich",
+                "Mütterlich/Versorgend",
+                "Kindlich/Bedürftig",
+                "Parasitär (Ausnutzend)",
+                "Symbiotisch (Verschmelzend)",
             ],
             "Konfliktstil": [
                 "Keine Auswahl",
-                "Explosiv/Laut", "Passive-Aggressiv", "Rational/Diskutierend", "Rückzug/Schweigen", "Weinen/Emotional",
-                "Manipulation/Gaslighting"
-            ]
+                "Explosiv/Laut",
+                "Passive-Aggressiv",
+                "Rational/Diskutierend",
+                "Rückzug/Schweigen",
+                "Weinen/Emotional",
+                "Manipulation/Gaslighting",
+            ],
         }
     },
     "XI. GEM V1.3 Steuerungs-Matrix": {
         "Steuerungs-Parameter": {
             "Kognitive Fehlbarkeit": [
                 "Keine Auswahl",
-                "Vergisst Pflichten bei Erregung", "Überanalysiert Gefühle", "Driftet in Tagträume ab", "Projiziert Trauma auf Gegenwart",
-                "Verliert Zeitgefühl", "Dissoziiert bei Stress"
+                "Vergisst Pflichten bei Erregung",
+                "Überanalysiert Gefühle",
+                "Driftet in Tagträume ab",
+                "Projiziert Trauma auf Gegenwart",
+                "Verliert Zeitgefühl",
+                "Dissoziiert bei Stress",
             ],
             "Sensorischer Trigger": [
                 "Keine Auswahl",
-                "Olfaktorisch/Geruch", "Auditiv/Stimme", "Visuell/Blick", "Taktil/Berührung",
-                "Gustatorisch/Geschmack"
+                "Olfaktorisch/Geruch",
+                "Auditiv/Stimme",
+                "Visuell/Blick",
+                "Taktil/Berührung",
+                "Gustatorisch/Geschmack",
             ],
             "Sprach-Authentizität": [
                 "Keine Auswahl",
-                "Akademisch/Kühl", "Vulgär/Direkt", "Gebrochen/Akzentuiert (Modus A/B)", "Dialekt-Gefärbt",
-                "Poetisch/Verschlüsselt", "Technokratisch/Präzise"
-            ]
+                "Akademisch/Kühl",
+                "Vulgär/Direkt",
+                "Gebrochen/Akzentuiert (Modus A/B)",
+                "Dialekt-Gefärbt",
+                "Poetisch/Verschlüsselt",
+                "Technokratisch/Präzise",
+            ],
         }
-    }
+    },
 }
